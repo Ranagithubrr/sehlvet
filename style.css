@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600&family=Berkshire+Swash&family=Playfair+Display:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+   overflow-x: hidden;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #F0EADC;
+  padding: 40px 120px;
+  padding-bottom: 200px;
+  box-sizing: border-box;
+ 
+}
+
+header .headerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .headerBox .logo {
+  font-weight: 600;
+  font-size: 36px;
+  cursor: pointer;
+  color: #2F2F2F;
+}
+header .headerBox .menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .headerBox .menu ul li {
+  list-style-type: none;
+  padding: 0 15px;
+  display: inline-block;
+}
+header .headerBox .menu ul li a {
+  text-decoration: none;
+  color: #2F2F2F;
+  font-size: 24px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+header .headerBox .menu ul li a :hover {
+  color: #7a7a7a;
+}
+header .headerBox .menuIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .headerBox .menuIcons span {
+  font-size: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.landing {
+  display: flex;
+}
+.landing .left {
+  width: 50%;
+}
+.landing .left h1 {
+  padding-top: 80px;
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+}
+.landing .left p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 50px;
+  padding: 40px 0;
+}
+.landing .left button {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: #754F23;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  font-family: "Playfair Display", serif;
+  transition: 0.3s ease;
+}
+.landing .left button img {
+  margin-left: 20px;
+}
+.landing .right {
+  width: 50%;
+}
+.landing .right img {
+  width: 120%;
+  margin-top: -120px;
+  margin-left: -100px;
+  pointer-events: none;
+}
+
+.landing .left button:hover {
+  background-color: #a05e12;
+}
+
+.collection .top {
+  margin-top: -250px;
+}
+.collection .top h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #2F2F2F;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.collection .top h2 span {
+  font-size: 30px;
+  color: rgba(47, 47, 47, 0.7960784314);
+}
+.collection .top p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 50px;
+  padding: 40px 0;
+}
+.collection .collectionCards {
+  display: flex;
+  align-items: baseline;
+}
+.collection .collectionSingleCard {
+  width: 26%;
+  margin: 0 auto;
+  border: 1px solid #754F23;
+  padding: 20px;
+  border-radius: 20px;
+}
+.collection .collectionSingleCard img {
+  width: 100%;
+  border-radius: 10px;
+}
+.collection .collectionSingleCard h5 {
+  padding: 10px 0;
+  color: #2F2F2F;
+  font-size: 22px;
+}
+.collection .collectionSingleCard .cardPrice {
+  display: flex;
+  justify-content: space-between;
+}
+.collection .collectionSingleCard .cardPrice .cartIcons {
+  display: flex;
+}
+.collection .collectionSingleCard .cardPrice .cartIcons span {
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.collection .collectionSingleCard2 {
+  height: 600px;
+}
+.collection .collectionSingleCard2 img {
+  height: 85%;
+}
+.collection .collectionSingleCardLast {
+  position: relative;
+  top: -100px;
+}
+.collection .collectionSingleCardLast .viewAllButton {
+  position: absolute;
+  top: 110%;
+  right: 0;
+}
+.collection .collectionSingleCardLast .viewAllButton button {
+  border: 2px solid #754F23;
+  outline: none;
+  background: transparent;
+  font-size: 24px;
+  color: #754F23;
+  padding: 8px 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.collection .collectionSingleCardLast .viewAllButton button:hover {
+  background-color: #754F23;
+  color: #DDD9D6;
+}
+
+.Summercollection {
+  padding-top: 50px;
+}
+.Summercollection .top h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #2F2F2F;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.Summercollection .top h2 span {
+  font-size: 30px;
+  color: rgba(47, 47, 47, 0.7960784314);
+}
+.Summercollection .top p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 50px;
+  padding: 40px 0;
+}
+.Summercollection .TwoBoxes {
+  display: flex;
+}
+.Summercollection .TwoBoxes .left {
+  width: 50%;
+}
+.Summercollection .TwoBoxes .left img {
+  padding-left: 50px;
+}
+.Summercollection .TwoBoxes .left p {
+  font-size: 20px;
+  color: #2F2F2F;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+.Summercollection .right {
+  width: 50%;
+  padding-left: 50px;
+}
+.Summercollection .right p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.Summercollection .right .imageBox {
+  position: relative;
+}
+.Summercollection .right .imageBox .mainImageRight {
+  padding-left: 100px;
+}
+.Summercollection .right .imageBox .smallImage {
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+}
+.Summercollection .right .imageBox button {
+  position: absolute;
+  right: 0;
+  bottom: -15%;
+  border: 2px solid #754F23;
+  outline: none;
+  background: transparent;
+  font-size: 24px;
+  color: #754F23;
+  padding: 8px 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.Summercollection .right .imageBox button:hover {
+  background-color: #754F23;
+  color: #DDD9D6;
+}
+
+.winterCollection {
+  padding-top: 150px;
+}
+.winterCollection .top {
+  text-align: end;
+}
+.winterCollection .top h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #2F2F2F;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.winterCollection .top h2 span {
+  font-size: 30px;
+  color: rgba(47, 47, 47, 0.7960784314);
+}
+.winterCollection .top p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 50px;
+  padding: 40px 0;
+}
+.winterCollection .winterTwoPart {
+  display: flex;
+}
+.winterCollection .winterTwoPart .left {
+  width: 50%;
+}
+.winterCollection .winterTwoPart .left p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.winterCollection .winterTwoPart .left .images {
+  position: relative;
+}
+.winterCollection .winterTwoPart .left .images .back {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.winterCollection .winterTwoPart .left .images .front {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: 100%;
+  margin-top: 120px;
+}
+.winterCollection .winterTwoPart .right {
+  width: 50%;
+  padding-top: 200px;
+  padding-left: 50px;
+}
+.winterCollection .winterTwoPart .right .buttonBox {
+  text-align: right;
+}
+.winterCollection .winterTwoPart .right button {
+  border: 2px solid #754F23;
+  outline: none;
+  background: transparent;
+  font-size: 24px;
+  color: #754F23;
+  padding: 8px 30px;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.winterCollection .winterTwoPart .right button:hover {
+  background-color: #754F23;
+  color: #DDD9D6;
+}
+.winterCollection .winterTwoPart .right p {
+  font-size: 18px;
+  color: #2F2F2F;
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.customerFeedback {
+  width: 80%;
+  position: relative;
+  cursor: grab;
+}
+.customerFeedback .PrevArrow {
+  position: absolute;
+  right: -100px;
+  left: auto;
+  bottom: 20px;
+  display: none;
+  border: 2px solid #2F2F2F;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.customerFeedback .PrevArrow:hover {
+  background-color: #754F23;
+  color: #DDD9D6;
+}
+.customerFeedback .NextArrow {
+  position: absolute;
+  right: -170px;
+  left: auto;
+  bottom: 20px;
+  display: none;
+  border: 2px solid #2F2F2F;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.customerFeedback .NextArrow:hover {
+  background-color: #754F23;
+  color: #DDD9D6;
+}
+.customerFeedback .sliderItems {
+  display: flex;
+  position: relative;
+}
+.customerFeedback .sliderItems .left img {
+  padding-left: 10px;
+}
+.customerFeedback .sliderItems .right {
+  padding-left: 50px;
+}
+.customerFeedback .sliderItems .right img {
+  padding-top: 40px;
+}
+.customerFeedback .sliderItems .right p {
+  padding-top: 30px;
+  font-size: 20px;
+}
+.customerFeedback .sliderItems .right h6 {
+  font-size: 25px;
+  position: absolute;
+  bottom: 30px;
+}
+.customerFeedback .sliderItems .right span {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer {
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #754F23;
+  padding: 50px 110px;
+  display: flex;
+}
+footer div {
+  width: 33%;
+}
+footer div h3 {
+  color: #DDD9D6;
+}
+footer div a {
+  display: block;
+  color: #DDD9D6;
+  text-decoration: none;
+  padding: 5px 0;
+}
+footer .social {
+  display: flex;
+}
+footer .social a {
+  padding-right: 10px;
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */
+
+
+@media screen and (min-width:1300px) {
+  .container{
+    width:1350px;
+  }
+  footer{
+    width: 1350px;    
+  }
+}
+

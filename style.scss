@@ -1,0 +1,460 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600&family=Berkshire+Swash&family=Playfair+Display:wght@400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+.container{
+    width:1240px;
+    margin: 0 auto;
+    background-color: #F0EADC;
+    padding:40px 120px;
+    padding-bottom: 200px;
+}
+header{
+    .headerBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:20px 0;
+        .logo{
+            font-weight: 600;
+            font-size: 36px;
+            cursor: pointer;
+            color:#2F2F2F;
+        }
+        .menu{
+            ul{
+                margin:0;
+                padding:0;
+                display: flex;
+                li{
+                    list-style-type: none;
+                    padding:0 15px;
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        color:#2F2F2F;
+                        font-size: 24px;
+                        transition: 0.2s ease;
+                        cursor: pointer;
+                        :hover{
+                            color:#7a7a7a
+                        }
+                    }
+                }
+            }
+        }
+        .menuIcons{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                font-size: 30px;
+                margin:0 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.landing{
+    display: flex;    
+    .left{
+        width:50%;
+        h1{
+            padding-top: 80px;
+            font-family: 'Playfair Display', serif;
+
+            font-size: 80px;
+        }
+        p{
+            font-size: 18px;
+            color:#2F2F2F;
+            padding-right: 50px;
+            padding:40px 0;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            border:none;
+            outline:none;
+            background-color: #754F23;
+            color:#fff;
+            padding:10px 30px;
+            border-radius: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            font-family: 'Playfair Display', serif;
+            transition: 0.3s ease;
+            
+            img{
+                margin-left: 20px;
+            }
+        }
+            
+    }
+    .right{
+        width:50%;
+        img{
+            width:120%;
+            margin-top: -120px;
+            margin-left: -100px;
+        }
+    }
+}
+.landing .left button:hover{
+    background-color: #a05e12;
+}
+.collection{
+    .top{
+        margin-top: -250px;
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color:#2F2F2F;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            padding-bottom: 15px;
+            span{
+                font-size: 30px;
+                color:#2f2f2fcb;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 50px;
+            padding: 40px 0;
+        }
+    }
+    .collectionCards{
+        display: flex;
+        align-items: baseline;
+    }
+    .collectionSingleCard{
+        width:26%;
+        margin: 0 auto;
+        border:1px solid #754F23;
+        padding:20px;
+        border-radius: 20px;
+        img{
+            width:100%;
+            border-radius: 10px;
+        }
+        h5{
+            padding:10px 0;
+            color:#2F2F2F;
+            font-size: 22px;
+        }
+        .cardPrice{
+            display: flex;
+            justify-content: space-between;
+            .cartIcons{
+                display: flex;
+                span{
+                    font-size: 18px;
+                    margin:0 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .collectionSingleCard2{
+        height:600px;
+        img{
+            height:85%;
+        }
+    }
+    .collectionSingleCardLast{
+        position: relative;
+        top: -100px;
+        .viewAllButton{
+            position: absolute;
+            top: 110%;
+            right:0;
+            button{
+                border:2px solid #754F23;
+                outline:none;
+                background: transparent;
+                font-size: 24px;
+                color:#754F23;
+                padding:8px 30px;
+                font-weight: 500;
+                border-radius: 10px;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    background-color: #754F23;
+                    color:#DDD9D6;
+                }
+            }
+        }
+    }
+}
+.Summercollection{
+    padding-top: 50px;
+    .top{
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color:#2F2F2F;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            padding-bottom: 15px;
+            span{
+                font-size: 30px;
+                color:#2f2f2fcb;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 50px;
+            padding: 40px 0;
+        }
+    }
+    .TwoBoxes{
+        display: flex;
+        .left{
+            width:50%;
+            img{
+                padding-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                color: #2F2F2F;
+                padding-top: 30px;
+                padding-right: 20px;
+            }
+            }
+        }
+        .right{
+            width:50%;
+            padding-left: 50px;
+            p{
+                font-size: 18px;
+                color: #2F2F2F;
+                padding-right: 30px;
+                padding-bottom: 20px;
+            }
+            .imageBox{
+                position: relative;
+
+                .mainImageRight{
+                    padding-left: 100px;
+                    
+                }
+                .smallImage{
+                    position: absolute;
+                    left: 0;
+                    bottom: -10%;
+                }
+                button{
+                    position: absolute;
+                    right: 0;
+                    bottom: -15%;
+                    border: 2px solid #754F23;
+                    outline: none;
+                    background: transparent;
+                    font-size: 24px;
+                    color: #754F23;
+                    padding: 8px 30px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                    transition: 0.2s;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #754F23;
+                        color:#DDD9D6;
+                    }
+                }
+            }
+        }
+    }
+
+.winterCollection{
+    padding-top: 150px;
+    .top{
+        text-align: end;
+        h2{
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color:#2F2F2F;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            padding-bottom: 15px;
+            span{
+                font-size: 30px;
+                color:#2f2f2fcb;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 50px;
+            padding: 40px 0;
+        }
+    }
+    .winterTwoPart{
+        display: flex;
+        .left{
+            width:50%;
+            p{
+                font-size: 18px;
+                color: #2F2F2F;
+                padding-right: 30px;
+                padding-bottom: 20px;
+            }
+            .images{
+                position: relative;
+                .back{
+                    position: absolute;
+                    right:0;
+                    z-index: 1;
+                }
+                .front{
+                    position: absolute;
+                    left:0;
+                    z-index: 2;
+                    top:100%;
+                    margin-top: 120px;
+                }
+            }
+        }
+        .right{
+            width:50%;            
+            padding-top: 200px;
+            padding-left: 50px;
+            .buttonBox{
+                text-align: right;
+                
+            }
+            button{
+                border: 2px solid #754F23;
+                outline: none;
+                background: transparent;
+                font-size: 24px;
+                color: #754F23;
+                padding: 8px 30px;
+                font-weight: 500;
+                border-radius: 10px;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    background-color: #754F23;
+                    color:#DDD9D6;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: #2F2F2F;
+                padding-top: 40px;
+                padding-right: 30px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.customerFeedback{
+    width:80%;
+    position: relative;
+
+        .PrevArrow{
+            position: absolute;
+            right: -100px;
+            left: auto;
+            bottom: 20px;
+            display: none;
+            border:2px solid #2F2F2F;
+            padding:8px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    background-color: #754F23;
+                    color:#DDD9D6;
+                }
+        } .NextArrow{
+            position: absolute;
+            right: -170px;
+            left: auto;
+            bottom: 20px;
+            display: none;
+            border:2px solid #2F2F2F;
+            padding:8px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    background-color: #754F23;
+                    color:#DDD9D6;
+                }
+        }
+
+    .sliderItems{
+        display: flex;
+        position: relative;
+        .left{
+            img{
+                padding-left: 10px;
+            }
+        }
+        .right{
+            padding-left: 50px;
+            img{
+
+                padding-top: 40px;
+            }
+            p{
+                padding-top: 30px;
+                font-size: 20px;
+            }
+            h6{
+                font-size: 25px;
+                position: absolute;
+                bottom:30px;
+            }
+            span{
+                font-size: 15px;
+                position: absolute;
+                bottom:0px;
+            }
+        }
+    }
+    
+}
+
+footer{
+    width:1480px;
+    box-sizing: border-box;
+    margin:0 auto;
+    background-color: #754F23;
+    padding: 50px 110px;
+    display: flex;
+    div{
+        width:33%;
+        h3{
+            color:#DDD9D6;
+        }
+        a{
+            display: block;
+            color:#DDD9D6;
+            text-decoration: none;
+            padding:5px 0;
+        }
+       }
+    .social{
+        display: flex;
+        a{
+            padding-right:10px;
+            display: inline-block;
+        }
+    }
+
+}
