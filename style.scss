@@ -1,338 +1,217 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200;300;400;500;600&family=Berkshire+Swash&family=Playfair+Display:wght@400;500;600&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: black;
+
+body {
+    background-color: white;
+    overflow-x: hidden;
 }
-.container{
-    width:1240px;
+
+.container {
+    width: 100vw;
     margin: 0 auto;
     background-color: #F0EADC;
-    padding:40px 120px;
+    padding: 40px 120px;
+    box-sizing: border-box;
     padding-bottom: 200px;
 }
-header{
-    .headerBox{
+
+header {
+    .headerBox {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:20px 0;
-        .logo{
+        padding: 20px 0;
+
+        .logo {
             font-weight: 600;
             font-size: 36px;
             cursor: pointer;
-            color:#2F2F2F;
+            color: #2F2F2F;
         }
-        .menu{
-            ul{
-                margin:0;
-                padding:0;
+
+        .menu {
+            ul {
+                margin: 0;
+                padding: 0;
                 display: flex;
-                li{
+
+                li {
                     list-style-type: none;
-                    padding:0 15px;
+                    padding: 0 15px;
                     display: inline-block;
-                    a{
+
+                    a {
                         text-decoration: none;
-                        color:#2F2F2F;
+                        color: #2F2F2F;
                         font-size: 24px;
                         transition: 0.2s ease;
                         cursor: pointer;
-                        :hover{
-                            color:#7a7a7a
+
+                        :hover {
+                            color: #7a7a7a
                         }
                     }
                 }
             }
         }
-        .menuIcons{
+
+        .menuIcons {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            span{
+
+            span {
                 font-size: 30px;
-                margin:0 10px;
+                margin: 0 10px;
                 cursor: pointer;
             }
         }
     }
 }
-.landing{
-    display: flex;    
-    .left{
-        width:50%;
-        h1{
+
+.landing {
+    display: flex;
+
+    .left {
+        width: 50%;
+
+        h1 {
             padding-top: 80px;
             font-family: 'Playfair Display', serif;
 
             font-size: 80px;
         }
-        p{
+
+        p {
             font-size: 18px;
-            color:#2F2F2F;
+            color: #2F2F2F;
             padding-right: 50px;
-            padding:40px 0;
+            padding: 40px 0;
         }
-        button{
+
+        button {
             display: flex;
             align-items: center;
-            border:none;
-            outline:none;
+            border: none;
+            outline: none;
             background-color: #754F23;
-            color:#fff;
-            padding:10px 30px;
+            color: #fff;
+            padding: 10px 30px;
             border-radius: 10px;
             font-size: 24px;
             cursor: pointer;
             font-family: 'Playfair Display', serif;
             transition: 0.3s ease;
-            
-            img{
+
+            img {
                 margin-left: 20px;
             }
         }
-            
+
     }
-    .right{
-        width:50%;
-        img{
-            width:120%;
+
+    .right {
+        width: 50%;
+
+        img {
+            width: 120%;
             margin-top: -120px;
             margin-left: -100px;
         }
     }
 }
-.landing .left button:hover{
+
+.landing .left button:hover {
     background-color: #a05e12;
 }
-.collection{
-    .top{
+
+.collection {
+    .top {
         margin-top: -250px;
-        h2{
+
+        h2 {
             font-family: 'Playfair Display', serif;
             font-size: 50px;
-            color:#2F2F2F;
+            color: #2F2F2F;
             border-bottom: 1px solid black;
             display: inline-block;
             padding-bottom: 15px;
-            span{
+
+            span {
                 font-size: 30px;
-                color:#2f2f2fcb;
+                color: #2f2f2fcb;
             }
         }
-        p{
+
+        p {
             font-size: 18px;
             color: #2F2F2F;
             padding-right: 50px;
             padding: 40px 0;
         }
     }
-    .collectionCards{
+
+    .collectionCards {
         display: flex;
         align-items: baseline;
     }
-    .collectionSingleCard{
-        width:26%;
+
+    .collectionSingleCard {
+        width: 26%;
         margin: 0 auto;
-        border:1px solid #754F23;
-        padding:20px;
+        border: 1px solid #754F23;
+        padding: 20px;
         border-radius: 20px;
-        img{
-            width:100%;
+
+        img {
+            width: 100%;
             border-radius: 10px;
         }
-        h5{
-            padding:10px 0;
-            color:#2F2F2F;
+
+        h5 {
+            padding: 10px 0;
+            color: #2F2F2F;
             font-size: 22px;
         }
-        .cardPrice{
+
+        .cardPrice {
             display: flex;
             justify-content: space-between;
-            .cartIcons{
+
+            .cartIcons {
                 display: flex;
-                span{
+
+                span {
                     font-size: 18px;
-                    margin:0 10px;
+                    margin: 0 10px;
                     cursor: pointer;
                 }
             }
         }
     }
-    .collectionSingleCard2{
-        height:600px;
-        img{
-            height:85%;
+
+    .collectionSingleCard2 {
+        height: 600px;
+
+        img {
+            height: 85%;
         }
     }
-    .collectionSingleCardLast{
+
+    .collectionSingleCardLast {
         position: relative;
         top: -100px;
-        .viewAllButton{
+
+        .viewAllButton {
             position: absolute;
             top: 110%;
-            right:0;
-            button{
-                border:2px solid #754F23;
-                outline:none;
-                background: transparent;
-                font-size: 24px;
-                color:#754F23;
-                padding:8px 30px;
-                font-weight: 500;
-                border-radius: 10px;
-                transition: 0.2s;
-                cursor: pointer;
-                &:hover{
-                    background-color: #754F23;
-                    color:#DDD9D6;
-                }
-            }
-        }
-    }
-}
-.Summercollection{
-    padding-top: 50px;
-    .top{
-        h2{
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            color:#2F2F2F;
-            border-bottom: 1px solid black;
-            display: inline-block;
-            padding-bottom: 15px;
-            span{
-                font-size: 30px;
-                color:#2f2f2fcb;
-            }
-        }
-        p{
-            font-size: 18px;
-            color: #2F2F2F;
-            padding-right: 50px;
-            padding: 40px 0;
-        }
-    }
-    .TwoBoxes{
-        display: flex;
-        .left{
-            width:50%;
-            img{
-                padding-left: 50px;
-            }
-            p{
-                font-size: 20px;
-                color: #2F2F2F;
-                padding-top: 30px;
-                padding-right: 20px;
-            }
-            }
-        }
-        .right{
-            width:50%;
-            padding-left: 50px;
-            p{
-                font-size: 18px;
-                color: #2F2F2F;
-                padding-right: 30px;
-                padding-bottom: 20px;
-            }
-            .imageBox{
-                position: relative;
+            right: 0;
 
-                .mainImageRight{
-                    padding-left: 100px;
-                    
-                }
-                .smallImage{
-                    position: absolute;
-                    left: 0;
-                    bottom: -10%;
-                }
-                button{
-                    position: absolute;
-                    right: 0;
-                    bottom: -15%;
-                    border: 2px solid #754F23;
-                    outline: none;
-                    background: transparent;
-                    font-size: 24px;
-                    color: #754F23;
-                    padding: 8px 30px;
-                    font-weight: 500;
-                    border-radius: 10px;
-                    transition: 0.2s;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: #754F23;
-                        color:#DDD9D6;
-                    }
-                }
-            }
-        }
-    }
-
-.winterCollection{
-    padding-top: 150px;
-    .top{
-        text-align: end;
-        h2{
-            font-family: 'Playfair Display', serif;
-            font-size: 50px;
-            color:#2F2F2F;
-            border-bottom: 1px solid black;
-            display: inline-block;
-            padding-bottom: 15px;
-            span{
-                font-size: 30px;
-                color:#2f2f2fcb;
-            }
-        }
-        p{
-            font-size: 18px;
-            color: #2F2F2F;
-            padding-right: 50px;
-            padding: 40px 0;
-        }
-    }
-    .winterTwoPart{
-        display: flex;
-        .left{
-            width:50%;
-            p{
-                font-size: 18px;
-                color: #2F2F2F;
-                padding-right: 30px;
-                padding-bottom: 20px;
-            }
-            .images{
-                position: relative;
-                .back{
-                    position: absolute;
-                    right:0;
-                    z-index: 1;
-                }
-                .front{
-                    position: absolute;
-                    left:0;
-                    z-index: 2;
-                    top:100%;
-                    margin-top: 120px;
-                }
-            }
-        }
-        .right{
-            width:50%;            
-            padding-top: 200px;
-            padding-left: 50px;
-            .buttonBox{
-                text-align: right;
-                
-            }
-            button{
+            button {
                 border: 2px solid #754F23;
                 outline: none;
                 background: transparent;
@@ -343,12 +222,199 @@ header{
                 border-radius: 10px;
                 transition: 0.2s;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     background-color: #754F23;
-                    color:#DDD9D6;
+                    color: #DDD9D6;
                 }
             }
-            p{
+        }
+    }
+}
+
+.Summercollection {
+    padding-top: 50px;
+
+    .top {
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: #2F2F2F;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            padding-bottom: 15px;
+
+            span {
+                font-size: 30px;
+                color: #2f2f2fcb;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 50px;
+            padding: 40px 0;
+        }
+    }
+
+    .TwoBoxes {
+        display: flex;
+
+        .left {
+            width: 50%;
+
+            img {
+                padding-left: 50px;
+            }
+
+            p {
+                font-size: 20px;
+                color: #2F2F2F;
+                padding-top: 30px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    .right {
+        width: 50%;
+        padding-left: 50px;
+
+        p {
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        .imageBox {
+            position: relative;
+
+            .mainImageRight {
+                padding-left: 100px;
+
+            }
+
+            .smallImage {
+                position: absolute;
+                left: 0;
+                bottom: -10%;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                bottom: -15%;
+                border: 2px solid #754F23;
+                outline: none;
+                background: transparent;
+                font-size: 24px;
+                color: #754F23;
+                padding: 8px 30px;
+                font-weight: 500;
+                border-radius: 10px;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #754F23;
+                    color: #DDD9D6;
+                }
+            }
+        }
+    }
+}
+
+.winterCollection {
+    padding-top: 150px;
+
+    .top {
+        text-align: end;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            color: #2F2F2F;
+            border-bottom: 1px solid black;
+            display: inline-block;
+            padding-bottom: 15px;
+
+            span {
+                font-size: 30px;
+                color: #2f2f2fcb;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: #2F2F2F;
+            padding-right: 50px;
+            padding: 40px 0;
+        }
+    }
+
+    .winterTwoPart {
+        display: flex;
+
+        .left {
+            width: 50%;
+
+            p {
+                font-size: 18px;
+                color: #2F2F2F;
+                padding-right: 30px;
+                padding-bottom: 20px;
+            }
+
+            .images {
+                position: relative;
+
+                .back {
+                    position: absolute;
+                    right: 0;
+                    z-index: 1;
+                }
+
+                .front {
+                    position: absolute;
+                    left: 0;
+                    z-index: 2;
+                    top: 100%;
+                    margin-top: 120px;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+            padding-top: 200px;
+            padding-left: 50px;
+
+            .buttonBox {
+                text-align: right;
+
+            }
+
+            button {
+                border: 2px solid #754F23;
+                outline: none;
+                background: transparent;
+                font-size: 24px;
+                color: #754F23;
+                padding: 8px 30px;
+                font-weight: 500;
+                border-radius: 10px;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #754F23;
+                    color: #DDD9D6;
+                }
+            }
+
+            p {
                 font-size: 18px;
                 color: #2F2F2F;
                 padding-top: 40px;
@@ -359,102 +425,183 @@ header{
     }
 }
 
-.customerFeedback{
-    width:80%;
+.customerFeedback {
+    width: 80%;
     position: relative;
 
-        .PrevArrow{
-            position: absolute;
-            right: -100px;
-            left: auto;
-            bottom: 20px;
-            display: none;
-            border:2px solid #2F2F2F;
-            padding:8px 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.2s;
-                cursor: pointer;
-                &:hover{
-                    background-color: #754F23;
-                    color:#DDD9D6;
-                }
-        } .NextArrow{
-            position: absolute;
-            right: -170px;
-            left: auto;
-            bottom: 20px;
-            display: none;
-            border:2px solid #2F2F2F;
-            padding:8px 18px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.2s;
-                cursor: pointer;
-                &:hover{
-                    background-color: #754F23;
-                    color:#DDD9D6;
-                }
-        }
+    .PrevArrow {
+        position: absolute;
+        right: -100px;
+        left: auto;
+        bottom: 20px;
+        display: none;
+        border: 2px solid #2F2F2F;
+        padding: 8px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        cursor: pointer;
 
-    .sliderItems{
+        &:hover {
+            background-color: #754F23;
+            color: #DDD9D6;
+        }
+    }
+
+    .NextArrow {
+        position: absolute;
+        right: -170px;
+        left: auto;
+        bottom: 20px;
+        display: none;
+        border: 2px solid #2F2F2F;
+        padding: 8px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #754F23;
+            color: #DDD9D6;
+        }
+    }
+
+    .sliderItems {
         display: flex;
         position: relative;
-        .left{
-            img{
+
+        .left {
+            img {
                 padding-left: 10px;
             }
         }
-        .right{
+
+        .right {
             padding-left: 50px;
-            img{
+
+            img {
 
                 padding-top: 40px;
             }
-            p{
+
+            p {
                 padding-top: 30px;
                 font-size: 20px;
             }
-            h6{
+
+            h6 {
                 font-size: 25px;
                 position: absolute;
-                bottom:30px;
+                bottom: 30px;
             }
-            span{
+
+            span {
                 font-size: 15px;
                 position: absolute;
-                bottom:0px;
+                bottom: 0px;
             }
         }
     }
-    
+
 }
 
-footer{
-    width:1480px;
+footer {
+    width: 100vw;
     box-sizing: border-box;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #754F23;
     padding: 50px 110px;
     display: flex;
-    div{
-        width:33%;
-        h3{
-            color:#DDD9D6;
+
+    div {
+        width: 33%;
+
+        h3 {
+            color: #DDD9D6;
         }
-        a{
+
+        a {
             display: block;
-            color:#DDD9D6;
+            color: #DDD9D6;
             text-decoration: none;
-            padding:5px 0;
+            padding: 5px 0;
         }
-       }
-    .social{
+    }
+
+    .social {
         display: flex;
-        a{
-            padding-right:10px;
+
+        a {
+            padding-right: 10px;
             display: inline-block;
         }
     }
 
+}
+
+
+@media screen and (max-width:1350px) {
+    .collection .top {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .collection .top {
+        margin-top: -50px;
+    }
+
+    .landing .right img {
+        width: 100%;
+        margin-top: -120px;
+        margin-left: -25px;
+    }
+
+    .landing .left h1 {
+        padding-top: 80px;
+        font-family: "Playfair Display", serif;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .collection .top {
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .landing .right img {
+        margin-top: 0px;
+    }
+
+    .Summercollection .right .imageBox .mainImageRight {
+        padding-left: 40px;
+    }
+
+    .Summercollection .TwoBoxes .left img {
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width:1080px) {
+    .landing .left h1{
+    font-size: 50px;
+}
+}
+
+// responsive
+@media screen and (min-width:1400px) {
+    .container {
+        width: 1320px;
+    }
+
+    footer {
+        width: 1320px;
+    }
+
+    .collection .top {
+        margin-top: -150px;
+    }
 }
