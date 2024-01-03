@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./slick.css">
     <link rel="stylesheet" href="./style.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="./js/slick.min.js"></script>
@@ -17,22 +18,23 @@
 <body>
     <div class="container">
         <header>
-            <div class="headerBox">
+            <div class="headerBox" data-aos="fade-up">
                 <div>
                     <span class="logo">Sehlvet</span>
                 </div>
                 <div class="menu">
+                    <span class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></span>
                     <ul>
-                        <li>
+                        <li class="menuItems">
                             <a href="#">Home</a>
                         </li>
-                        <li>
+                        <li class="menuItems">
                             <a href="#">Collections</a>
                         </li>
-                        <li>
+                        <li class="menuItems">
                             <a href="#">Brands</a>
                         </li>
-                        <li>
+                        <li class="menuItems">
                             <a href="#">About Us</a>
                         </li>
                     </ul>
@@ -40,6 +42,9 @@
                 <div class="menuIcons">
                     <span><i class="fa fa-bookmark-o" aria-hidden="true"></i></span>
                     <span><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span>
+                    <div class="hamburger-button">
+                        <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -65,7 +70,7 @@
             </div>
             <!-- collection cards -->
             <div class="collectionCards">
-                <div class="collectionSingleCard">
+                <div class="collectionSingleCard" data-aos="flip-left">
                     <img src="./assets/Mask group.png" alt="">
                     <h5>Formal Shirt For Women</h5>
                     <div class="cardPrice">
@@ -78,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collectionSingleCard collectionSingleCard2">
+                <div class="collectionSingleCard collectionSingleCard2" data-aos="flip-right">
                     <img src="./assets/nathan-dumlao-aT2Voo0gyVE-unsplash.png" alt="">
                     <h5>Black and gray Exercise outfit</h5>
                     <div class="cardPrice">
@@ -92,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collectionSingleCard collectionSingleCardLast">
+                <div class="collectionSingleCard collectionSingleCardLast" data-aos="flip-up">
                     <img src="./assets/nikita-kachanovsky-GY6ViMxtmDE-unsplash.png" alt="">
                     <h5>Yellow Jacket For Winter</h5>
                     <div class="cardPrice">
@@ -119,19 +124,19 @@
             </div>
             <!-- collection cards -->
             <div class="TwoBoxes">
-                <div class="left">
+                <div class="left" data-aos="zoom-in" data-aos="zoom-in-up">
                     <img src="./assets/Rectangle 14.png" alt="">
                     <p>Our main aim is to serve our customer with better quality product. We try to understand their
                         needs and provide them within a short period of time.</p>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="flip-right">
                     <p>OWe provide the largest clothing collection for any season. You can choose trendy or classy
                         design according to your preferences. Our services are super fast and we update within 24 hours.
                     </p>
                     <div class="imageBox">
                         <img src="./assets/Rectangle 13.png" alt="" class="mainImageRight">
                         <img src="./assets/Rectangle 15.png" alt="" class="smallImage">
-                        <button>Explore <span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></button>
+                        <button>Explore 1<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span></button>
                     </div>
                 </div>
                 <div></div>
@@ -144,7 +149,7 @@
                 <p>We consider your look and comfort on cold weather.</p>
             </div>
             <div class="winterTwoPart">
-                <div class="left">
+                <div class="left" data-aos="flip-up">
                     <p>We provide the largest clothing collection for any season. You can choose trendy or classy design
                         according to your preferences. Our services are super fast and we update within 24 hours.</p>
                     <div class="images">
@@ -152,7 +157,7 @@
                         <img src="./assets/Rectangle 20.png" alt="" class="front">
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" data-aos="flip-down">
                     <div class="buttonBox">
                         <button>Explore <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                     </div>
@@ -164,7 +169,7 @@
             </div>
         </div>
         <!-- Customer's Feedback -->
-        <div class="winterCollection">
+        <div class="winterCollection customersFeedback">
             <div class="top">
                 <h2><span>What Our</span> Customer Says</h2>
                 <p>We value our customer’s feedback to provide the best service.</p>
